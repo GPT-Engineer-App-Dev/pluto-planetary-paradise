@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 const quotesData = [
-  { id: 1, text: "The only way to do great work is to love what you do.", author: "Steve Jobs", year: 2005 },
-  { id: 2, text: "Life is what happens when you're busy making other plans.", author: "John Lennon", year: 1980 },
-  { id: 3, text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt", year: 1963 },
-  { id: 4, text: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein", year: 1955 },
-  { id: 5, text: "The only impossible journey is the one you never begin.", author: "Tony Robbins", year: 2000 },
+  { id: 1, text: "Mars is there, waiting to be reached.", author: "Buzz Aldrin", year: 2013 },
+  { id: 2, text: "The first human beings to land on Mars should not come back to Earth.", author: "Buzz Aldrin", year: 2013 },
+  { id: 3, text: "We are all explorers on Mars, in a sense.", author: "Andy Weir", year: 2011 },
+  { id: 4, text: "Mars has been flown by, orbited, smacked into, radar examined, and rocketed onto, as well as bounced upon, rolled over, shoveled, drilled into, baked, and even blasted.", author: "Buzz Aldrin", year: 2013 },
+  { id: 5, text: "By going to Mars one day, we will make things better for us here on Earth.", author: "Buzz Aldrin", year: 2013 },
 ];
 
 const QuoteDetail = () => {

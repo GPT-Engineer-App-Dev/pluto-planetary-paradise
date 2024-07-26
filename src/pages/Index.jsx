@@ -6,41 +6,41 @@ const Index = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Explore Jupiter</h1>
-        <p className="text-xl text-gray-600">The Largest Planet in Our Solar System</p>
+        <h1 className="text-4xl font-bold mb-4">Discover Mars</h1>
+        <p className="text-xl text-gray-600">The Red Planet: Our Celestial Neighbor</p>
       </header>
 
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <img src="/placeholder.svg" alt="Jupiter" className="mx-auto object-cover w-full h-[500px] rounded-lg shadow-lg" />
+          <img src="/placeholder.svg" alt="Mars" className="mx-auto object-cover w-full h-[500px] rounded-lg shadow-lg" />
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Facts about Jupiter</h2>
+          <h2 className="text-2xl font-semibold mb-4">Facts about Mars</h2>
           <ul className="list-disc list-inside space-y-2 mb-6">
-            <li>Largest planet in our solar system</li>
-            <li>Known as a gas giant, primarily composed of hydrogen and helium</li>
-            <li>Has a Great Red Spot, a giant storm that has lasted for centuries</li>
-            <li>Has at least 79 moons, including the four large Galilean moons</li>
-            <li>Completes one rotation in about 10 hours (Jovian day)</li>
+            <li>Fourth planet from the Sun in our solar system</li>
+            <li>Known as the Red Planet due to its reddish appearance</li>
+            <li>Has the largest volcano in the solar system, Olympus Mons</li>
+            <li>Features a grand canyon, Valles Marineris, spanning 1/4 of the planet's circumference</li>
+            <li>Has two small, irregularly shaped moons: Phobos and Deimos</li>
           </ul>
-          <Button>Learn More About Jupiter</Button>
+          <Button>Explore Mars Further</Button>
         </div>
       </div>
 
       <section className="mt-16">
-        <h2 className="text-3xl font-bold text-center mb-8">Why Jupiter Fascinates Us</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Why Mars Captivates Us</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3">Massive Scale</h3>
-            <p>Jupiter's enormous size and gravitational influence have shaped the solar system, protecting Earth from many asteroid impacts.</p>
+            <h3 className="text-xl font-semibold mb-3">Potential for Life</h3>
+            <p>Mars' similarity to Earth and evidence of past water make it a prime candidate in the search for extraterrestrial life.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3">Dynamic Atmosphere</h3>
-            <p>The planet's colorful bands and swirling storms, including the Great Red Spot, showcase complex atmospheric dynamics.</p>
+            <h3 className="text-xl font-semibold mb-3">Future Colonization</h3>
+            <p>As the most habitable planet besides Earth, Mars is the focus of future human exploration and potential colonization efforts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3">Diverse Moons</h3>
-            <p>Jupiter's many moons, especially the Galilean moons, offer potential habitats for extraterrestrial life in our solar system.</p>
+            <h3 className="text-xl font-semibold mb-3">Geological Wonders</h3>
+            <p>Mars' unique geological features, like Olympus Mons and Valles Marineris, offer insights into planetary formation and evolution.</p>
           </div>
         </div>
       </section>
