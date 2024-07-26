@@ -15,18 +15,18 @@ const SolarSystem = () => {
     // Planet data
     const planets = [
       { name: 'Sun', color: '#FFD700', radius: 30, orbit: 0, speed: 0 },
-      { name: 'Mercury', color: '#8C7853', radius: 5, orbit: 50, speed: 0.04 },
-      { name: 'Venus', color: '#FFA500', radius: 8, orbit: 80, speed: 0.015 },
-      { name: 'Earth', color: '#4169E1', radius: 9, orbit: 110, speed: 0.01 },
-      { name: 'Mars', color: '#FF4500', radius: 7, orbit: 140, speed: 0.008 },
-      { name: 'Jupiter', color: '#DEB887', radius: 20, orbit: 200, speed: 0.002 },
-      { name: 'Saturn', color: '#F4A460', radius: 17, orbit: 250, speed: 0.0009 },
+      { name: 'Mercury', color: '#8C7853', radius: 5, orbit: 50, speed: 0.08 },
+      { name: 'Venus', color: '#FFA500', radius: 8, orbit: 80, speed: 0.03 },
+      { name: 'Earth', color: '#4169E1', radius: 9, orbit: 110, speed: 0.02 },
+      { name: 'Mars', color: '#FF4500', radius: 7, orbit: 140, speed: 0.016 },
+      { name: 'Jupiter', color: '#DEB887', radius: 20, orbit: 200, speed: 0.004 },
+      { name: 'Saturn', color: '#F4A460', radius: 17, orbit: 250, speed: 0.0018 },
     ];
 
     let time = 0;
 
     const animate = () => {
-      time += 0.01;
+      time += 0.02;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw planets
