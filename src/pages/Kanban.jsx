@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { cn } from "@/lib/utils";
 
 const initialColumns = {
   todo: {
@@ -65,19 +66,22 @@ const Kanban = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 min-h-screen">
       <h1 className="text-3xl font-bold mb-6">Kanban Board</h1>
       <DragDropContext onDragEnd={onDragEnd}>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 overflow-x-auto pb-4">
           {Object.values(columns).map((column) => (
-            <div key={column.id} className="bg-gray-100 p-4 rounded-lg w-64">
+            <div key={column.id} className="bg-gray-100 p-4 rounded-lg w-64 flex-shrink-0">
               <h2 className="font-bold mb-2">{column.title}</h2>
               <Droppable droppableId={column.id}>
                 {(provided, snapshot) => (
                   <div
                     {...provided.droppableProps}
                     ref={provided.innerRef}
-                    className={`min-h-[100px] ${snapshot.isDraggingOver ? 'bg-gray-200' : ''}`}
+                    className={cn(
+                      "min-h-[200px] transition-colors",
+                      snapshot.isDraggingOver ? "bg-gray-200" : "bg-gray-50"
+                    )}
                   >
                     {column.tasks.map((task, index) => (
                       <Draggable key={task.id} draggableId={task.id} index={index}>
@@ -86,9 +90,11 @@ const Kanban = () => {
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            className={`p-2 mb-2 rounded ${
-                              snapshot.isDragging ? 'bg-gray-300' : 'bg-white'
-                            }`}
+                            className={cn(
+                              "p-4 mb-2 rounded shadow-sm",
+                              snapshot.isDragging ? "bg-blue-100" : "bg-white",
+                              "cursor-grab active:cursor-grabbing"
+                            )}
                           >
                             {task.content}
                           </div>
